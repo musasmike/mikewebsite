@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/hdo3eeu.css">
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <title>Welcome to Mike Musas Portfolio</title>
 </head>
 <body>
@@ -42,26 +43,7 @@
 
     <div class="wrapper-project">
         <div class="container">
-            <div class='tableauPlaceholder' id='viz1702880023140' style='position: relative'>
-                <noscript>
-                    <a href='#'><img alt='Electric Car Population ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;el&#47;electic_vehicle_population&#47;ElectricCarPopulation&#47;1_rss.png' style='border: none' /></a>
-                </noscript>
-                <object class='tableauViz'  style='display:none;'>
-                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                    <param name='embed_code_version' value='3' /> 
-                    <param name='site_root' value='' />
-                    <param name='name' value='electic_vehicle_population&#47;ElectricCarPopulation' />
-                    <param name='tabs' value='no' />
-                    <param name='toolbar' value='yes' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;el&#47;electic_vehicle_population&#47;ElectricCarPopulation&#47;1.png' /> 
-                    <param name='animate_transition' value='yes' />
-                    <param name='display_static_image' value='yes' />
-                    <param name='display_spinner' value='yes' />
-                    <param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' />
-                    <param name='language' value='en-US' />
-                </object>
-            </div>                   
+            <div id="vizContainer"></div>
         </div>
 
     </div>
@@ -93,6 +75,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 
     <script>
 
