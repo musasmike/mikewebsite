@@ -116,7 +116,6 @@ nav li:first-child {
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
 }
 
 
@@ -125,7 +124,7 @@ nav li:first-child {
 /* SHOWCASE SECTION */
 
 .showcase {
-    height: 800px;
+    height: 850px;
     padding: 70px 0;
 }
 
@@ -499,6 +498,11 @@ footer .copyright {
     margin-bottom: 30px;
 }
 
+.wrapper-project {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------- */
@@ -551,6 +555,10 @@ footer .copyright {
         display: block;
     }
 
+    .showcase {
+        height: 870px;
+    }
+
     .profile-picture img {
         width: 50%;
         float: right;
@@ -564,7 +572,7 @@ footer .copyright {
     }
 
     .about-me {
-        height: 900px;
+        height: 1000px;
         padding-top: 70px;
         padding-bottom: 70px;
     }
@@ -606,6 +614,7 @@ footer .copyright {
         margin-top: 100px;
         margin-bottom: 40px;
     }
+
 
 }
 
