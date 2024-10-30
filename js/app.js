@@ -6,6 +6,9 @@ const containerDivRoadTrafficFatalities = document.getElementById("viz1722845856
 const containerDivMeteorite = document.getElementById("viz1722846079734");
 const containerDivRealEstate = document.getElementById("viz1722845527889");
 const containerDivPollution = document.getElementById("viz1700431546148");
+const containerDivCrimes = document.getElementById("viz1730296755478");
+const containerDivCrossing = document.getElementById("viz1703133969131");
+const containerDivSalesPerformance = document.getElementById("viz1730301023353");
 
 // Electric Vehicle Population Tableau Link
 const urlElectricVehicle = "https://public.tableau.com/views/electic_vehicle_population/ElectricVehiclePopulationDashboard";
@@ -13,6 +16,9 @@ const urlRoadTrafficFatalities = "https://public.tableau.com/views/msba_project_
 const urlMeteorite = "https://public.tableau.com/views/Meteorite_Landings_Dashboard/MeteoriteLandingsAcrosstheWorld";
 const urlRealEstate = "https://public.tableau.com/views/RealEstateSalesDashboard_17228429219500/RealEstateSalesDashboard-SaleValue";
 const urlPollution = "https://public.tableau.com/views/plastic_pollution/PlasticPollutionReport";
+const urlCrimes = "https://public.tableau.com/views/Crimes-CityofLosAngeles/Dashboard2";
+const urlCrossing = "https://public.tableau.com/views/USBorderCrossingEntryDashboard/USBorderCrossingsReport";
+const urlSalesPerformance = "https://public.tableau.com/views/SuperStoreSalesDashboard_17303004967540/Overview";
 
 // Different options of the visualization
 const options = {
@@ -52,6 +58,12 @@ if (containerDiv) {
     document.addEventListener("DOMContentLoaded", initViz(containerDivRealEstate, urlRealEstate, options));
 } else if (containerDivPollution) {
     document.addEventListener("DOMContentLoaded", initViz(containerDivPollution, urlPollution, options));
+} else if (containerDivCrimes) {
+    document.addEventListener("DOMContentLoaded", initViz(containerDivCrimes, urlCrimes, options));
+} else if (containerDivCrossing) {
+    document.addEventListener("DOMContentLoaded", initViz(containerDivCrossing, urlCrossing, options));
+} else if (containerDivSalesPerformance) {
+    document.addEventListener("DOMContentLoaded", initViz(containerDivSalesPerformance, urlSalesPerformance, options));
 }
 
 
