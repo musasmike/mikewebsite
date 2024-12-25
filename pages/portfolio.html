@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.9.2.min.js" async></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Portfolio Showcasing</title>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <!-- SIDEBAR -->
+        <ul class="sidebar" id="sidebar">
+            <li>
+                <a href="./portfolio.html">
+                    <img src="../img/MikeMusasLogoMarkDesign_Black.svg" alt="Mike's Logo" width="50">
+                    <img src="../img/close.svg" alt="Clone Menu" width="40" class="close">
+                </a>
+            </li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li><a href="https://www.linkedin.com/in/mike-musas/">LinkedIn <span><img src="../img/LinkExternal.svg" alt="Mike's Logo" width="20"></span></a></li>
+        </ul>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="menu">
+            <li><a href="../index.html"><img src="../img/MikeMusasLogoMarkDesign_Black.svg" alt="Mike's Logo" width="50"></a></li>
+            <li class="hide-on-mobile"><a href="../index.html">Home</a></li>
+            <li class="hide-on-mobile"><a href="./portfolio.html" class="current-page">Portfolio</a></li>
+            <li class="hide-on-mobile"><a href="./aboutme.html">About Me</a></li>
+            <li class="hide-on-mobile"><a href="https://www.linkedin.com/in/mike-musas/">LinkedIn <span><img src="../img/LinkExternal.svg" alt="External Link" width="20"></span></a></li>
+            <li onclick=showSidebar() class="menu-icon"><a href="#"><img src="../img/menu.svg" alt="Menu" width="40" ></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- START: FEATURED PORTFOLIO SECTION -->
+    <section class="featured-portfolio">
+        <div class="container">
+
+            <!-- START: FEATURED PORTFOLIO SECTION -->
+            <section class='portfolio-title'>
+                <hr/>
+                <h1 class="scroll-fade">FEATURED PORTFOLIO</h1>
+                <p class="scroll-fade">Explore a curated collection of my most impactful projects, showcasing creativity, technical expertise, and problem-solving abilities across diverse domains.</p>
+            </section>
+
+            <!-- PORTFOLIO CARDS SECTION -->
+            <section class='portfolio-cards scroll-fade'>
+                <a href="./roadtrafficfatalities.html" class='portfolio-card' id='road-traffic'>
+                    
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                        <div>
+                        <h4>Road Traffic Fatalities</h4>
+                        <p>Dashboard</p>
+                        </div>
+                        <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                    </div>
+                    
+                </a>
+
+                <a href="./superstoresales.html" class='portfolio-card scroll-fade' id='superstore'>
+                    
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                        <div>
+                        <h4>Super Store Sales</h4>
+                        <p>Dashboard</p>
+                        </div>
+                        
+                        <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                    </div>
+                    
+                </a>
+
+                <a href="./meteoritelandings.html" class='portfolio-card scroll-fade' id='meteorite-landings'>
+                    
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                        <div>
+                        <h4>Meteorite Landings</h4>
+                        <p>Dashboard</p>
+                        </div>
+                        
+                        <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                    </div>
+                    
+                </a>
+
+                <a href="https://github.com/musasmike/applied_data_science_capstone" class='portfolio-card scroll-fade' id='spacex' target="_blank" rel="noreferrer">
+                        
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                        <div>
+                        <h4>SpaceX Rocket Landings</h4>
+                        <p>Machine Learning</p>
+                        </div>
+                        
+                        <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                    </div>
+                    
+                </a>
+
+            </section>
+            <!-- END: FEATURED PORTFOLIO SECTION -->
+
+
+            <!-- START: DATA VISUALIZATION SECTION -->
+            <section class='portfolio-title'>
+                <hr/>
+                <h1 class="scroll-fade">DATA VISUALIZATION</h1>
+                <p class="scroll-fade">Dive into dynamic and insightful visual representations of complex data, designed to tell compelling stories and drive informed decision-making.</p>
+            </section>
+
+            <!-- PORTFOLIO CARDS SECTION -->
+            <section class='portfolio-cards'>
+            <a href="./crimeanalysis.html" class='portfolio-card scroll-fade' id='crime-analysis'>
+                
+                <div class='gradient'></div>
+                <div class='descriptions'>
+                    <div>
+                    <h4>Crime Analysis</h4>
+                    <p>Dashboard</p>
+                    </div>
+                    
+                    <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                </div>
+                
+            </a>
+
+            <a href="./realestatesales.html" class='portfolio-card scroll-fade' id='real-estate'>
+                
+                <div class='gradient'></div>
+                <div class='descriptions'>
+                    <div>
+                    <h4>Real Estate Analysis</h4>
+                    <p>Dashboard</p>
+                    </div>
+                    
+                    <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                </div>
+                
+            </a>
+
+            <a href="./electricvehicles.html" class='portfolio-card scroll-fade' id='electric-vehicles'>
+                
+                <div class='gradient'></div>
+                <div class='descriptions'>
+                    <div>
+                    <h4>Electric Vehicles</h4>
+                    <p>Dashboard</p>
+                    </div>
+                    
+                    <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                </div>
+                
+            </a>
+
+            <a href="./plasticpollution.html" class='portfolio-card scroll-fade' id='plastic-pollution'>
+                
+                <div class='gradient'></div>
+                <div class='descriptions'>
+                    <div>
+                    <h4>Plastic Pollution Analysis</h4>
+                    <p>Dashboard</p>
+                    </div>
+                    
+                    <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                </div>
+                
+            </a>
+            
+            <a href="./bordercrossing.html" class='portfolio-card scroll-fade' id='border-crossing'>
+                
+                <div class='gradient'></div>
+                <div class='descriptions'>
+                    <div>
+                    <h4>Border Crossing</h4>
+                    <p>Dashboard</p>
+                    </div>
+                    
+                    <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                </div>
+                
+            </a>
+            </section>
+            <!-- END: DATA VISUALIZATION SECTION -->
+
+
+            <!-- START: DATA ANALYTICS & MACHINE LEARNING SECTION -->
+            <section class='portfolio-title'>
+                <hr/>
+                <h1 class="scroll-fade">DATA ANALYTICS & MACHINE LEARNING</h1>
+                <p class="scroll-fade">Discover how advanced algorithms and analytical techniques are leveraged to uncover patterns, build predictive models, and solve real-world problems effectively.</p>
+            </section>
+
+            <!-- PORTFOLIO CARDS SECTION -->
+            <section class='portfolio-cards'>
+
+            <a href="https://github.com/musasmike/beer_data_analysis" class='portfolio-card scroll-fade' id='beer' target="_blank" rel="noreferrer">
+                
+                <div class='gradient'></div>
+                <div class='descriptions'>
+                    <div>
+                    <h4>Beer Data Analysis</h4>
+                    <p>Data Analysis</p>
+                    </div>
+                    
+                    <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                </div>
+                
+            </a>
+
+            <a href="https://github.com/mikekaband/breastcancer" class='portfolio-card scroll-fade' id='breast-cancer' target="_blank" rel="noreferrer">
+                
+                <div class='gradient'></div>
+                <div class='descriptions'>
+                    <div>
+                    <h4>Breast Cancer Detection</h4>
+                    <p>Machine Learning</p>
+                    </div>
+                    
+                    <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                </div>
+                
+            </a>
+            </section>
+            <!-- END: DATA ANALYTICS & MACHINE LEARNING SECTION -->
+
+
+        </div>
+    </section>
+    <!-- END: FEATURED PORTFOLIO SECTION -->
+
+
+    <!-- START: FOOTER SECTION -->
+    <footer>
+
+        <div class='footer'>
+            <div class="container">
+                <!-- Contact Information Details -->
+                <div class='contact-information'>
+                    <h1>LET'S CONNECT</h1>
+                    <div class='contact-buttons'>
+        
+                            <!-- LinkedIn Button -->
+                            <button class="btn-2">
+                                <a href="https://www.linkedin.com/in/mike-musas/" target="_blank" rel="noreferrer">
+                                    <span>LinkedIn</span> <span><img src="../img/LinkExternal.svg" alt="External Link" width="25"></span>
+                                </a>
+                            </button>
+        
+                            <!-- GitHub Button -->
+                            <button class="btn-2">
+                                <a href="https://github.com/musasmike" target="_blank" rel="noreferrer">
+                                    <span>GitHub</span> <span><img src="../img/LinkExternal.svg" alt="External Link" width="25"></span>
+                                </a>
+                            </button>
+        
+                    </div>
+    
+                    <div class='email-me'>
+                            <p>Email Me: <span>mike.k.musas@gmail.com</span></p>
+                    </div>
+    
+                </div>
+    
+                <!-- Copyright -->
+                <div class='copyright'>
+                    <div>
+                        <img src="../img/CharacterProfile.png" alt="Mike Character" width="210" />
+                    </div>
+                    
+                    <p>&copy;MADE BY <span>MIKE MUSAS</span> | 2024</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Menu -->
+        <div class="nav-footer-menu">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="../index.html" >Home</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="current-page">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="./aboutme.html" >About Me</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+      </footer>
+      <!-- END: FOOTER SECTION -->
+
+    <!-- SCRIPTS LINKS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>
+

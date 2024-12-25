@@ -1,0 +1,21 @@
+<svg width="553" height="474" viewBox="0 0 553 474" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_859_815" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="553" height="474">
+<rect width="553" height="474" rx="15" fill="white"/>
+</mask>
+<g mask="url(#mask0_859_815)">
+<rect width="553" height="474" rx="15" fill="#80C7F2"/>
+<line x1="3.58579" y1="117.586" x2="117.586" y2="3.58578" stroke="#54A2EB" stroke-width="4"/>
+<line x1="3.58579" y1="202.586" x2="203.586" y2="2.58579" stroke="#54A2EB" stroke-width="4"/>
+<line x1="3.58579" y1="284.586" x2="285.586" y2="2.58579" stroke="#54A2EB" stroke-width="4"/>
+<line x1="3.58579" y1="370.586" x2="371.586" y2="2.58578" stroke="#54A2EB" stroke-width="4"/>
+<line x1="3.58579" y1="457.586" x2="457.586" y2="3.58578" stroke="#54A2EB" stroke-width="4"/>
+<line x1="88.5858" y1="468.586" x2="545.586" y2="11.5858" stroke="#54A2EB" stroke-width="4"/>
+<line x1="197.586" y1="468.586" x2="530.586" y2="135.586" stroke="#54A2EB" stroke-width="4"/>
+<ellipse cx="276" cy="314" rx="69" ry="96" fill="white"/>
+<ellipse cx="455" cy="196" rx="69" ry="96" fill="white"/>
+<ellipse cx="97" cy="314" rx="69" ry="96" fill="white"/>
+<rect x="196" y="333" width="160" height="141" fill="#54A2EB"/>
+<rect x="17" y="334" width="160" height="140" fill="#54A2EB"/>
+<rect x="375" y="204" width="160" height="270" fill="#54A2EB"/>
+</g>
+</svg>

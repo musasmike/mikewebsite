@@ -3,133 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.9.2.min.js" async></script>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/hdo3eeu.css">
-    <title>Welcome to Mike Musas Portfolio</title>
+    <title>Welcome to Mike's Portfolio</title>
 </head>
 <body>
 
-    <!-- HEADER AND NAVIGATION SECITON -->
+    <!-- START: NAVIGATION BAR -->
+    <nav>
+        <!-- SIDEBAR -->
+        <ul class="sidebar" id="sidebar">
+            <li>
+                <a href="index.html">
+                    <img src="img/MikeMusasLogoMarkDesign_Black.svg" alt="Mike's Logo" width="50">
+                    <img src="img/close.svg" alt="Clone Menu" width="40" class="close">
+                </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/portfolio.html">Portfolio</a></li>
+            <li><a href="pages/aboutme.html">About Me</a></li>
+            <li><a href="https://www.linkedin.com/in/mike-musas/" target="_blank" rel="noreferrer">LinkedIn <span><img src="img/LinkExternal.svg" alt="Mike's Logo" width="20"></span></a></li>
+        </ul>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="menu">
+            <li><a href="index.html"><img src="img/MikeMusasLogoMarkDesign_Black.svg" alt="Mike's Logo" width="50"></a></li>
+            <li class="hide-on-mobile" ><a href="index.html" class="current-page">Home</a></li>
+            <li class="hide-on-mobile"><a href="pages/portfolio.html">Portfolio</a></li>
+            <li class="hide-on-mobile"><a href="pages/aboutme.html">About Me</a></li>
+            <li class="hide-on-mobile"><a href="https://www.linkedin.com/in/mike-musas/" target="_blank" rel="noreferrer">LinkedIn <span><img src="img/LinkExternal.svg" alt="External Link" width="20"></span></a></li>
+            <li onclick=showSidebar() class="menu-icon"><a href="#"><img src="img/menu.svg" alt="Menu" width="40" ></a></li>
+        </ul>
+    </nav>
+    <!-- END: NAVIGATION BAR -->
+
+    <!-- START: SHOWCASE -->
     <header>
-        <nav id="navbar">
-            <div class="container">
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><a class="current-page" href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
+        <div class="container">
+            <!-- Introduction Text -->
+            <div class="intro-details scroll-fade">
+                <div>
+                    <p>Hello, I am</p>
+                    <p><span class="auto-type"></span></p>
+                </div>
 
-                <ul>
-                    <li><a href="index.html"><img src="img/mmk_logo.png" alt="MK Logo" class="logo"></a></li>
-                    <li class="hideOnMobile"><a class="current-page" href="index.html">Home</a></li>
-                    <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
-                    <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                </ul>
+                <!-- Call to action: Let's connect -->
+                <div>
+                    <p>
+                        I'm a passionate <span>data analyst</span> who enjoys working
+                        with data to uncover valuable insights that inform
+                        business decision-making.
+                    </p>
+                    <button class="btn-1"><a href="https://www.linkedin.com/in/mike-musas/" target="_blank" rel="noreferrer"><span>Let's Connect</span> <span><img src="img/LinkExternal.svg" alt="External Link" width="25"></span></a></button>
+                </div>
             </div>
-        </nav>
+
+            <!-- Profile Image -->
+            <div class="profile-image scroll-fade">
+                <img src="img/ProfilePicture.jpg" alt="Mike Profile Picture">
+            </div>
+        </div>
     </header>
+    <!-- END: SHOWCASE -->
 
-    <!-- SHOWCASE SECTION -->
-    <section class="showcase">
+
+    <!-- START: FEATURED PORTFOLIO SECTION -->
+    <section class="featured-portfolio-section">
         <div class="container">
-            <!-- Headlines -->
-            <div class="welcome-text">
-                <h4>Hello, I am </h4>
-                <h4><span class="auto-type"></span></h4>
+            <!-- Title -->
+            <h1 class="scroll-fade">FEATURED PORTFOLIO</h1>
+            <h3 class="scroll-fade">Take a look at some of my work!</h3>
+            <p class="scroll-fade">
+                Explore amazing dashboards built with a variety of tools such as Tableau Desktop, Looker Studio, Plotly dash, etc. 
+                These projects includes topics such as data visualization, machine learning, data analysis.
+            </p>
+
+            <div class="featured-portfolio-cards">
+                <!-- First Featured Project -->
+                <a href="./pages/roadtrafficfatalities.html" class='featured-portfolio-card scroll-fade'>
+                  
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                      <div>
+                        <h4>U.S. Road Traffic Fatalities</h4>
+                        <p>Dashboard</p>
+                      </div>
+                      
+                      <img src="img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo White" width="50"/>
+                    </div>
+                </a>
+
+                <!-- Second Featured Project -->
+                <a href="./pages/superstoresales.html" class='featured-portfolio-card scroll-fade'>
+                  
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                      <div>
+                        <h4>Super Store Sales</h4>
+                        <p>Dashboard</p>
+                      </div>
+                      
+                      <img src="img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo White" width="50"/>
+                    </div>
+                    
+                </a>
+  
+                <!-- Third Featured Project -->
+                <a href="./pages/meteoritelandings.html" class='featured-portfolio-card scroll-fade'>
+                    
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                      <div>
+                        <h4>Meteorite Landings</h4>
+                        <p>Dashboard</p>
+                      </div>
+                      
+                      <img src="img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo White" width="50"/>
+                    </div>
+                    
+                </a>
+  
+                <!-- Fourth Featured Project -->
+                <a href="https://github.com/musasmike/applied_data_science_capstone" class='featured-portfolio-card scroll-fade' target="_blank" rel="noreferrer">
+                    
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                      <div>
+                        <h4>SpaceX Rocket Landings</h4>
+                        <p>Machine Learning</p>
+                      </div>
+                      
+                      <img src="img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo White" width="50"/>
+                    </div>
+                    
+                </a>
             </div>
 
-            <!-- PROFILE PICTURE SECTION -->
-            <div class="profile-picture">
-                <img src="img/Profile Picture 1.jpg" alt="Mike Musas">
-            </div>
+            <!-- Explore More Button -->
+                <button class="btn-1 scroll-fade">
+                    <a href="./pages/portfolio.html">
+                        <span>Explore More</span> <span><img src="img/arrowright.svg" alt="Right Arrow" width="25"></span>
+                    </a>
+                </button>
+
         </div>
-
     </section>
+    <!-- END: FEATURED PORTFOLIO SECTION -->
 
 
-    <!-- ABOUT ME SECTION -->
-    <section class="about-me">
-        <div class="container">
-            <div class="profile-picture-2">
-                <img src="img/myphoto.jpg" alt="Mike Musas">
-            </div>
-
-            <div class="about-me-text">
-                <h2>About Me</h2>
-                <p>Hi, I'm Mike, a Data Analyst at Southern Utah University. I enjoy working with data to uncover valuable insights 
-                    that inform business decision-making. I have more than five years of experience using Microsoft Excel, more than 
-                    two years using Python, Tableau Desktop and SQL.</p>
-
-                <p>In my free time, I have a variety of hobbies and interests, including new technologies, reading, comics, sports 
-                    (Tennis and Soccer), and instrumental music. Music plays a significant role in my daily life, whether I'm studying, 
-                    working, or relaxing. I'm also a big fan of visual design; during my leisure hours, I enjoy designing posters.</p>
-
-                <h3>Contact</h3>
-                <p><u>mike.k.musas@gmail.com</u></p>
-
-                <a href="resume.html"><button class="btn">My Resume</button></a>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- FOOTER SECTION -->
+    <!-- START: FOOTER SECTION -->
     <footer>
-        <div class="container">
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mike-musas/">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="24" cy="24" r="24" fill="black"/>
-                        <path d="M36.9979 35H32.0287V27.2045C32.0287 25.3455 31.9956 22.9525 29.4443 22.9525C26.8561 22.9525 26.4601 24.9778 26.4601 27.0691V34.9994H21.4911V18.9687H26.2614V21.1594H26.3283C27.2995 19.4958 29.1122 18.4985 31.0349 18.57C36.0713 18.57 37 21.8885 37 26.2058L36.9979 35Z" fill="white"/>
-                        <path d="M15.8843 16.7773C15.884 16.7773 15.8838 16.7773 15.8837 16.7773C14.3017 16.7773 13 15.4734 13 13.8887C13 12.304 14.3017 11 15.8837 11C17.4655 11 18.767 12.3037 18.7673 13.8881C18.7673 13.8883 18.7673 13.8884 18.7673 13.8887C18.7673 15.4731 17.4659 16.7772 15.8843 16.7773Z" fill="white"/>
-                        <path d="M18.3688 35H13.3945V18.9686H18.3688V35Z" fill="white"/>
-                    </svg>
-                </a>
 
-                <a href="https://github.com/musasmike">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="24" cy="24" r="24" fill="black"/>
-                        <path d="M24 8C15.16 8 8 15.1117 8 23.8921C8 30.9243 12.58 36.8639 18.94 38.9696C19.74 39.1087 20.04 38.6319 20.04 38.2148C20.04 37.8373 20.02 36.5858 20.02 35.2549C16 35.9899 14.96 34.2815 14.64 33.3876C14.46 32.9307 13.68 31.5202 13 31.1428C12.44 30.8448 11.64 30.1098 12.98 30.09C14.24 30.0701 15.14 31.2421 15.44 31.7189C16.88 34.1226 19.18 33.4472 20.1 33.03C20.24 31.997 20.66 31.3017 21.12 30.9044C17.56 30.5071 13.84 29.1364 13.84 23.0577C13.84 21.3295 14.46 19.8992 15.48 18.7867C15.32 18.3894 14.76 16.7605 15.64 14.5753C15.64 14.5753 16.98 14.1582 20.04 16.2043C21.32 15.8467 22.68 15.6679 24.04 15.6679C25.4 15.6679 26.76 15.8467 28.04 16.2043C31.1 14.1383 32.44 14.5753 32.44 14.5753C33.32 16.7605 32.76 18.3894 32.6 18.7867C33.62 19.8992 34.24 21.3096 34.24 23.0577C34.24 29.1563 30.5 30.5071 26.94 30.9044C27.52 31.401 28.02 32.3546 28.02 33.8445C28.02 35.97 28 37.6784 28 38.2148C28 38.6319 28.3 39.1286 29.1 38.9696C35.6129 36.7858 39.9982 30.7197 40 23.8921C40 15.1117 32.84 8 24 8Z" fill="white"/>
-                    </svg>
-                </a>
-                        
+        <div class='footer'>
+            <div class="container">
+                <!-- Contact Information Details -->
+                <div class='contact-information'>
+                    <h1>LET'S CONNECT</h1>
+                    <div class='contact-buttons'>
+        
+                            <!-- LinkedIn Button -->
+                            <button class="btn-2">
+                                <a href="https://www.linkedin.com/in/mike-musas/" target="_blank" rel="noreferrer">
+                                    <span>LinkedIn</span> <span><img src="img/LinkExternal.svg" alt="External Link" width="25"></span>
+                                </a>
+                            </button>
+        
+                            <!-- GitHub Button -->
+                            <button class="btn-2">
+                                <a href="https://github.com/musasmike" target="_blank" rel="noreferrer">
+                                    <span>GitHub</span> <span><img src="img/LinkExternal.svg" alt="External Link" width="25"></span>
+                                </a>
+                            </button>
+        
+                    </div>
+    
+                    <div class='email-me'>
+                            <p>Email Me: <span>mike.k.musas@gmail.com</span></p>
+                    </div>
+    
+                </div>
+    
+                <!-- Copyright -->
+                <div class='copyright'>
+                    <div>
+                        <img src="img/CharacterProfile.png" alt="Mike Character" width="210" />
+                    </div>
+                    
+                    <p>&copy;MADE BY <span>MIKE MUSAS</span> | 2024</p>
+                </div>
+
             </div>
-            <div class="copyright">
-                &copy; Mike Musas
+
+        </div>
+
+
+        <!-- Footer Menu -->
+        <div class="nav-footer-menu">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="index.html" class="current-page">Home</a>
+                    </li>
+                    <li>
+                        <a href="pages/portfolio.html" >Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="pages/aboutme.html" >About Me</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
-    </footer>
 
+      </footer>
+      <!-- END: FOOTER SECTION -->
 
-    <!-- JAVASCRIPTS CONNECTIONS -->
-    <script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- SCRIPTS LINKS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRR4LTEZS5"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-DRR4LTEZS5');
+        var typed = new Typed(".auto-type", {
+            strings: ["Mike Musas", "A Data Analyst"],
+            typeSpeed: 100,
+            backSpeed: 20,
+            loop: true
+        });
     </script>
-
-
+    
 </body>
 </html>

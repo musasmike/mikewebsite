@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Super Store Sales</title>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <!-- SIDEBAR -->
+        <ul class="sidebar" id="sidebar">
+            <li>
+                <a href="./portfolio.html">
+                    <img src="../img/MikeMusasLogoMarkDesign_Black.svg" alt="Mike's Logo" width="50">
+                    <img src="../img/close.svg" alt="Clone Menu" width="40" class="close">
+                </a>
+            </li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li><a href="https://www.linkedin.com/in/mike-musas/">LinkedIn <span><img src="../img/LinkExternal.svg" alt="Mike's Logo" width="20"></span></a></li>
+        </ul>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="menu">
+            <li><a href="../index.html"><img src="../img/MikeMusasLogoMarkDesign_Black.svg" alt="Mike's Logo" width="50"></a></li>
+            <li class="hide-on-mobile"><a href="../index.html">Home</a></li>
+            <li class="hide-on-mobile"><a href="./portfolio.html" class="current-page">Portfolio</a></li>
+            <li class="hide-on-mobile"><a href="./aboutme.html">About Me</a></li>
+            <li class="hide-on-mobile"><a href="https://www.linkedin.com/in/mike-musas/">LinkedIn <span><img src="../img/LinkExternal.svg" alt="External Link" width="20"></span></a></li>
+            <li onclick=showSidebar() class="menu-icon"><a href="#"><img src="../img/menu.svg" alt="Menu" width="40" ></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- START: DASHBOARD -->
+    <section class="project">
+        <div>
+
+            <!-- START: REPORT -->
+            <div class="container">
+                <h1 class="scroll-fade">Real Estate Sales</h1>
+
+                <h3 class="scroll-fade">Overview</h3>
+
+                <p class="scroll-fade">
+                    The Real Estate Sales Dashboard provides an insightful analysis of sales trends, 
+                    property values, and transaction volumes over the years 2010 to 2022. Designed 
+                    for stakeholders in the real estate sector, this dashboard showcases key metrics, 
+                    including sales values, assessed values, and the composition of property types 
+                    sold. It serves as a valuable tool for evaluating market dynamics and formulating 
+                    data-driven strategies.
+                </p>
+            </div>
+
+            <br />
+            <br />
+            
+
+            <div class="dashboard dashboard-container scroll-fade">
+                <div id='viz1722845527889'></div>
+            </div>
+
+            <div class="container">
+                <h3 class="scroll-fade">Observations and Insights</h3>
+
+                <ol>
+                    <li class="scroll-fade">
+                        <strong>Market Dynamics</strong>:
+                        <ul>
+                            <li>The sharp growth in sales value around 2020-2021 may correlate with broader economic factors such as housing demand surges or favorable market conditions during the pandemic era.</li>
+                            <li>Despite this growth, a slight decline in sales value after 2021 suggests potential market corrections or cooling trends.</li>
+                        </ul>
+                    </li>
+                    <li class="scroll-fade">
+                        <strong>Residential Market Dominance</strong>:
+                        <ul>
+                            <li>The market's heavy reliance on residential property sales suggests opportunities for diversification into commercial or mixed-use properties.</li>
+                        </ul>
+                    </li>
+                    <li class="scroll-fade">
+                        <strong>Sales vs. Assessed Values</strong>:
+                        <ul>
+                            <li>The divergence between assessed and sales values in recent years may indicate overvaluation or speculative activity in the market.</li>
+                        </ul>
+                    </li>
+                    
+                </ol>
+
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+
+                <!-- EXPLORE MORE PROJECTS -->
+                <h2 class='explore-more'>Explore More Projects</h2>
+
+                <section class='portfolio-cards'>
+                    <a href="./crimeanalysis.html" class='portfolio-card scroll-fade' id='crime-analysis'>
+                
+                        <div class='gradient'></div>
+                        <div class='descriptions'>
+                            <div>
+                            <h4>Crime Analysis</h4>
+                            <p>Dashboard</p>
+                            </div>
+                            
+                            <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                        </div>
+                        
+                    </a>
+
+                    <a href="./electricvehicles.html" class='portfolio-card scroll-fade' id='electric-vehicles'>
+                        
+                        <div class='gradient'></div>
+                        <div class='descriptions'>
+                            <div>
+                            <h4>Electric Vehicles</h4>
+                            <p>Dashboard</p>
+                            </div>
+                            
+                            <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                        </div>
+                        
+                    </a>
+
+                    <a href="./plasticpollution.html" class='portfolio-card scroll-fade' id='plastic-pollution'>
+                
+                        <div class='gradient'></div>
+                        <div class='descriptions'>
+                            <div>
+                            <h4>Plastic Pollution Analysis</h4>
+                            <p>Dashboard</p>
+                            </div>
+                            
+                            <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                        </div>
+                        
+                    </a>
+
+                </section>
+            </div>
+            <!-- START: REPORT -->
+            
+        </div>
+    </section>
+    <!-- END: DASHBOARD -->
+
+
+    <!-- START: FOOTER SECTION -->
+    <footer>
+
+        <div class='footer'>
+            <div class="container">
+                <!-- Contact Information Details -->
+                <div class='contact-information'>
+                    <h1>LET'S CONNECT</h1>
+                    <div class='contact-buttons'>
+        
+                            <!-- LinkedIn Button -->
+                            <button class="btn-2">
+                                <a href="https://www.linkedin.com/in/mike-musas/" target="_blank" rel="noreferrer">
+                                    <span>LinkedIn</span> <span><img src="../img/LinkExternal.svg" alt="External Link" width="25"></span>
+                                </a>
+                            </button>
+        
+                            <!-- GitHub Button -->
+                            <button class="btn-2">
+                                <a href="https://github.com/musasmike" target="_blank" rel="noreferrer">
+                                    <span>GitHub</span> <span><img src="../img/LinkExternal.svg" alt="External Link" width="25"></span>
+                                </a>
+                            </button>
+        
+                    </div>
+    
+                    <div class='email-me'>
+                            <p>Email Me: <span>mike.k.musas@gmail.com</span></p>
+                    </div>
+    
+                </div>
+    
+                <!-- Copyright -->
+                <div class='copyright'>
+                    <div>
+                        <img src="../img/CharacterProfile.png" alt="Mike Character" width="210" />
+                    </div>
+                    
+                    <p>&copy;MADE BY <span>MIKE MUSAS</span> | 2024</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Menu -->
+        <div class="nav-footer-menu">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="../index.html" >Home</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="current-page">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="./aboutme.html" >About Me</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+      </footer>
+      <!-- END: FOOTER SECTION -->
+
+    <!-- SCRIPTS LINKS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.9.2.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/app.js"></script>
+    
+</body>
+</html>
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>US Road Traffic Fatalities</title>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <!-- SIDEBAR -->
+        <ul class="sidebar" id="sidebar">
+            <li>
+                <a href="./portfolio.html">
+                    <img src="../img/MikeMusasLogoMarkDesign_Black.svg" alt="Mike's Logo" width="50">
+                    <img src="../img/close.svg" alt="Clone Menu" width="40" class="close">
+                </a>
+            </li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li><a href="https://www.linkedin.com/in/mike-musas/">LinkedIn <span><img src="../img/LinkExternal.svg" alt="Mike's Logo" width="20"></span></a></li>
+        </ul>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="menu">
+            <li><a href="../index.html"><img src="../img/MikeMusasLogoMarkDesign_Black.svg" alt="Mike's Logo" width="50"></a></li>
+            <li class="hide-on-mobile"><a href="../index.html">Home</a></li>
+            <li class="hide-on-mobile"><a href="./portfolio.html" class="current-page">Portfolio</a></li>
+            <li class="hide-on-mobile"><a href="./aboutme.html">About Me</a></li>
+            <li class="hide-on-mobile"><a href="https://www.linkedin.com/in/mike-musas/">LinkedIn <span><img src="../img/LinkExternal.svg" alt="External Link" width="20"></span></a></li>
+            <li onclick=showSidebar() class="menu-icon"><a href="#"><img src="../img/menu.svg" alt="Menu" width="40" ></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- START: DASHBOARD -->
+    <section class="project">
+        <div>
+
+            <!-- START: REPORT -->
+            <div class="container">
+                <h1 class="scroll-fade">Road Traffic Fatalities in the USA 2022</h1>
+
+                <h3 class="scroll-fade">Introduction</h3>
+
+                <p class="scroll-fade">
+                    Traffic mortality has been a public health issue in the United States, 
+                    with thousands of individuals dying each year due to various factors 
+                    contributing to road accidents. This project aims to identify the 
+                    leading causes of traffic fatalities and recommend effective strategies 
+                    to reduce the number of deaths on American roads.
+                </p>
+                <p class="scroll-fade">
+                    The project will examine the leading contributors to traffic fatalities, 
+                    including speeding, drunk driving, and distracted driving. Speeding 
+                    remains one of the most significant factors, as higher speeds reduce the 
+                    driver's ability to react to sudden changes and increase the severity of 
+                    accidents. Drunk driving is another major cause, with impaired judgment 
+                    and delayed reaction times leading to a higher likelihood of crashes. 
+                    Distracted driving, often due to mobile phone use or other in-vehicle 
+                    distractions, has also emerged as a critical concern in recent years.
+                </p>
+            </div>
+
+            <br />
+            <br />
+            <br />
+
+            <div class="dashboard dashboard-container scroll-fade">
+                <div id='viz1722845856307'></div>
+            </div>
+
+            <div class="container">
+                <h3 class="scroll-fade">Key Findings</h3>
+
+                <p class="scroll-fade">
+                    Reducing traffic mortality in the USA requires a multifaceted approach that addresses 
+                    the various contributing factors identified in this project. By enhancing law enforcement, 
+                    improving road infrastructure, conducting public education campaigns, leveraging 
+                    technological innovations, and utilizing data-driven policy making, we can make significant 
+                    strides in decreasing the number of road traffic fatalities. The ultimate goal is to create 
+                    safer roads for all users, thereby protecting lives and reducing the devastating impact of 
+                    traffic accidents on families and communities. With coordinated efforts and sustained commitment, 
+                    we can achieve a substantial and lasting reduction in traffic mortality.
+                </p>
+
+                <br />
+                <br />
+
+                <p class="scroll-fade"><strong>Data Source:</strong> <a href='https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/' target="_blank" rel="noreferrer">nhtsa.org/</a></p>
+                <p class="scroll-fade"><strong>Project Report:</strong> <a href='https://github.com/musasmike/msba_capstone/tree/main' target="_blank" rel="noreferrer">GitHub Repository</a></p>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+
+                <!-- EXPLORE MORE PROJECTS -->
+                <h2 class='explore-more scroll-fade'>Explore More Projects</h2>
+                <section class='portfolio-cards'>
+
+                <a href="./superstoresales.html" class='portfolio-card scroll-fade' id='superstore'>
+                    
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                        <div>
+                            <h4>Super Store Sales</h4>
+                            <p>Dashboard</p>
+                        </div>
+                        
+                        <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                    </div>
+                    
+                </a>
+
+                <a href="./meteoritelandings.html" class='portfolio-card scroll-fade' id='meteorite-landings'>
+                    
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                        <div>
+                            <h4>Meteorite Landings</h4>
+                            <p>Dashboard</p>
+                        </div>
+                        
+                        <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50">
+                    </div>
+                    
+                </a>
+
+                <a href="https://github.com/musasmike/applied_data_science_capstone" class='portfolio-card scroll-fade' id='spacex' target="_blank" rel="noreferrer">
+                    
+                    <div class='gradient'></div>
+                    <div class='descriptions'>
+                        <div>
+                            <h4>SpaceX Rocket Landings</h4>
+                            <p>Machine Learning</p>
+                        </div>
+                        
+                        <img src="../img/MikeMusasLogoMark Design_White.svg" alt="Mike Logo" width="50"/>
+                    </div>
+                    
+                </a>
+                </section>
+            </div>
+            <!-- END: REPORT -->
+
+        </div>
+    </section>
+    <!-- END: DASHBOARD -->
+
+
+    <!-- START: FOOTER SECTION -->
+    <footer>
+
+        <div class='footer'>
+            <div class="container">
+                <!-- Contact Information Details -->
+                <div class='contact-information'>
+                    <h1>LET'S CONNECT</h1>
+                    <div class='contact-buttons'>
+        
+                            <!-- LinkedIn Button -->
+                            <button class="btn-2">
+                                <a href="https://www.linkedin.com/in/mike-musas/" target="_blank" rel="noreferrer">
+                                    <span>LinkedIn</span> <span><img src="../img/LinkExternal.svg" alt="External Link" width="25"></span>
+                                </a>
+                            </button>
+        
+                            <!-- GitHub Button -->
+                            <button class="btn-2">
+                                <a href="https://github.com/musasmike" target="_blank" rel="noreferrer">
+                                    <span>GitHub</span> <span><img src="../img/LinkExternal.svg" alt="External Link" width="25"></span>
+                                </a>
+                            </button>
+        
+                    </div>
+    
+                    <div class='email-me'>
+                            <p>Email Me: <span>mike.k.musas@gmail.com</span></p>
+                    </div>
+    
+                </div>
+    
+                <!-- Copyright -->
+                <div class='copyright'>
+                    <div>
+                        <img src="../img/CharacterProfile.png" alt="Mike Character" width="210" />
+                    </div>
+                    
+                    <p>&copy;MADE BY <span>MIKE MUSAS</span> | 2024</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Menu -->
+        <div class="nav-footer-menu">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="../index.html" >Home</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="current-page">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="./aboutme.html" >About Me</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+      </footer>
+      <!-- END: FOOTER SECTION -->
+
+    <!-- SCRIPTS LINKS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.9.2.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/app.js"></script>
+    
+</body>
+</html>
+
